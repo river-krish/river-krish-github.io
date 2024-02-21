@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Landing page of Python Fundamentals.">
+    <meta name="author" content="Digital Nomads">
+
+    <!-- Website Title -->
+    <title>Python Fundamentals</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+	<link href="../css/styles-python.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Digital Nomads</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.png" alt="Digital Nomads logo"></a> 
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#details">DETAILS <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Courses Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#courses" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="python.html"><span class="item-text">PYTHON</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript.html"><span class="item-text">JAVASCRIPT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="c-sharp.html"><span class="item-text">C#.NET <b style= "color: Red">(Coming Soon)</b></span></a>
+                    </div>
+                </li>
+                <!-- end of courses dropdown menu -->
+                <!-- Specializations Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#specializations" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SPECIALIZATIONS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cloud-development.html"><span class="item-text">CLOUD DEVELOPMENT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="web-development.html"><span class="item-text">WEB DEVELOPMENT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="devops.html"><span class="item-text">DEVOPS <b style= "color: Red">(Coming Soon)</b></span></a>
+                    </div>
+                </li>
+                <!-- end of specializations dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#about">ABOUT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.twitter.com">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-container">
+                        <h1>Python Fundamentals</h1>
+                        <p class="p-large">5. Functions</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        
+        
+
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="python-toc-0.html">Python TOC</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Lesson 5</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+   
+
+    <!-- Privacy Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h3 class="western">5.1 Defining Functions</h3>
+<p>Functions are a fundamental building block in Python programming.
+They allow you to encapsulate reusable blocks of code, making your
+programs modular, easier to read, and more maintainable. In this
+lesson, we'll explore the syntax and best practices for defining
+functions in Python.</p>
+<h4 class="western"><strong>1. Syntax:</strong></h4>
+<ul>
+	<li><p>Functions in Python are defined using the <code class="western">def</code>
+	keyword, followed by the function name and parentheses containing
+	zero or more parameters.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet():</code>
+<code class="western">    </code><code class="western">print(&quot;Hello, world!&quot;)</code></pre>
+<ul>
+	<li><p>In this example, <code class="western">greet</code> is the
+	function name, and it takes no parameters. The colon (<code class="western">:</code>)
+	indicates the beginning of the function block.</p></li>
+</ul>
+<h4 class="western"><strong>2. Parameters:</strong></h4>
+<ul>
+	<li><p>Functions can accept input parameters, allowing them to
+	receive data from the caller.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(name):</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {name}!&quot;)</code>
+
+<code class="western">greet(&quot;Alice&quot;)</code></pre>
+<ul>
+	<li><p>Here, <code class="western">name</code> is a parameter of the
+	<code class="western">greet</code> function. When calling the
+	function, you pass an argument <code class="western">&quot;Alice&quot;</code>
+	to the <code class="western">name</code> parameter.</p></li>
+</ul>
+<h4 class="western"><strong>3. Return Values:</strong></h4>
+<ul>
+	<li><p>Functions can also return values using the <code class="western">return</code>
+	statement.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def add_numbers(x, y):</code>
+<code class="western">    </code><code class="western">return x + y</code>
+
+<code class="western">result = add_numbers(3, 5)</code>
+<code class="western">print(result)  # Output: 8</code></pre>
+<ul>
+	<li><p>The <code class="western">add_numbers</code> function takes
+	two parameters <code class="western">x</code> and <code class="western">y</code>,
+	and returns their sum.</p></li>
+</ul>
+<h4 class="western"><strong>4. Docstrings:</strong></h4>
+<ul>
+	<li><p>It's good practice to include a docstring (documentation
+	string) to describe what the function does, its parameters, and
+	return values.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(name):</code>
+<code class="western">    </code><code class="western">&quot;&quot;&quot;Print a greeting message.&quot;&quot;&quot;</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {name}!&quot;)</code></pre>
+<ul>
+	<li><p>Docstrings are enclosed in triple quotes and appear as the
+	first statement in a function definition.</p></li>
+</ul>
+<h4 class="western"><strong>5. Default Parameters:</strong></h4>
+<ul>
+	<li><p>Functions can have default parameter values, which are used
+	when the caller does not provide a value for that parameter.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(name=&quot;World&quot;):</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {name}!&quot;)</code>
+
+<code class="western">greet()        # Output: Hello, World!</code>
+<code class="western">greet(&quot;Alice&quot;) # Output: Hello, Alice!</code></pre>
+<ul>
+	<li><p>In this example, if no <code class="western">name</code>
+	argument is provided, the default value <code class="western">&quot;World&quot;</code>
+	is used.</p></li>
+</ul>
+<h4 class="western"><strong>6. Arbitrary Number of Arguments:</strong></h4>
+<ul>
+	<li><p>You can define functions that accept an arbitrary number of
+	arguments using the <code class="western">*args</code> syntax.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def multiply(*args):</code>
+<code class="western">    </code><code class="western">result = 1</code>
+<code class="western">    </code><code class="western">for num in args:</code>
+<code class="western">        </code><code class="western">result *= num</code>
+<code class="western">    </code><code class="western">return result</code>
+
+<code class="western">print(multiply(2, 3, 4))  # Output: 24</code></pre>
+<ul>
+	<li><p>The <code class="western">*args</code> parameter collects all
+	additional positional arguments into a tuple.</p></li>
+</ul>
+<h4 class="western"><strong>7. Keyword Arguments:</strong></h4>
+<ul>
+	<li><p>Functions can also accept keyword arguments using the
+	<code class="western">**kwargs</code> syntax.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(**kwargs):</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {kwargs['name']}! You are {kwargs['age']} years old.&quot;)</code>
+
+<code class="western">greet(name=&quot;Alice&quot;, age=30)  # Output: Hello, Alice! You are 30 years old.</code></pre>
+<ul>
+	<li><p>The <code class="western">**kwargs</code> parameter collects
+	keyword arguments into a dictionary.</p></li>
+</ul>
+<h4 class="western"><strong>8. Lambda Functions:</strong></h4>
+<ul>
+	<li><p>Lambda functions are small, anonymous functions defined using
+	the <code class="western">lambda</code> keyword.</p></li>
+</ul>
+<pre class="western">
+<code class="western">add = lambda x, y: x + y</code>
+<code class="western">print(add(3, 5))  # Output: 8</code></pre>
+<ul>
+	<li><p>Lambda functions are useful for writing short, one-line
+	functions.</p></li>
+</ul>
+<h4 class="western"><strong>9. Conclusion:</strong></h4>
+<p>Understanding how to define and use functions is crucial for
+writing organized and efficient Python code. By following these best
+practices, you can create functions that are reusable,
+well-documented, and adaptable to various scenarios. Practice
+defining functions with different parameters and return values to
+solidify your understanding. In the next lesson, we'll explore
+function scope and variable visibility.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western">5.2 Parameters and Return Values</h3>
+<p>In Python, functions can take parameters as input, perform
+computations, and return values to the caller. Understanding how to
+work with parameters and return values is fundamental for creating
+flexible and reusable functions. In this lesson, we'll delve into the
+details of parameters, arguments, and return values in Python
+functions.</p>
+<h4 class="western"><strong>1. Parameters and Arguments:</strong></h4>
+<ul>
+	<li><p>Parameters are variables that are used in a function's
+	definition, and arguments are the actual values passed to the
+	function when calling it.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(name):</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {name}!&quot;)</code>
+
+<code class="western">greet(&quot;Alice&quot;)</code></pre>
+<ul>
+	<li><p>In this example, <code class="western">name</code> is a
+	parameter of the <code class="western">greet</code> function. When
+	calling the function, the argument <code class="western">&quot;Alice&quot;</code>
+	is passed to the <code class="western">name</code> parameter.</p></li>
+</ul>
+<h4 class="western"><strong>2. Default Parameters:</strong></h4>
+<ul>
+	<li><p>Functions can have default parameter values, which are used
+	when the caller does not provide a value for that parameter.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(name=&quot;World&quot;):</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {name}!&quot;)</code>
+
+<code class="western">greet()        # Output: Hello, World!</code>
+<code class="western">greet(&quot;Alice&quot;) # Output: Hello, Alice!</code></pre>
+<ul>
+	<li><p>Here, if no <code class="western">name</code> argument is
+	provided, the default value <code class="western">&quot;World&quot;</code>
+	is used.</p></li>
+</ul>
+<h4 class="western"><strong>3. Multiple Parameters:</strong></h4>
+<ul>
+	<li><p>Functions can have multiple parameters separated by commas.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def add(x, y):</code>
+<code class="western">    </code><code class="western">return x + y</code>
+
+<code class="western">result = add(3, 5)</code></pre>
+<ul>
+	<li><p>The <code class="western">add</code> function takes two
+	parameters <code class="western">x</code> and <code class="western">y</code>
+	and returns their sum.</p></li>
+</ul>
+<h4 class="western"><strong>4. Return Values:</strong></h4>
+<ul>
+	<li><p>Functions can return values using the <code class="western">return</code>
+	statement.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def multiply(x, y):</code>
+<code class="western">    </code><code class="western">return x * y</code>
+
+<code class="western">result = multiply(2, 4)</code>
+<code class="western">print(result)  # Output: 8</code></pre>
+<ul>
+	<li><p>The <code class="western">multiply</code> function takes two
+	parameters <code class="western">x</code> and <code class="western">y</code>
+	and returns their product.</p></li>
+</ul>
+<h4 class="western"><strong>5. Multiple Return Values:</strong></h4>
+<ul>
+	<li><p>A function can return multiple values as a tuple.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def divide_and_remainder(a, b):</code>
+<code class="western">    </code><code class="western">quotient = a // b</code>
+<code class="western">    </code><code class="western">remainder = a % b</code>
+<code class="western">    </code><code class="western">return quotient, remainder</code>
+
+<code class="western">result = divide_and_remainder(10, 3)</code>
+<code class="western">print(result)  # Output: (3, 1)</code></pre>
+<ul>
+	<li><p>The function <code class="western">divide_and_remainder</code>
+	returns both the quotient and remainder as a tuple.</p></li>
+</ul>
+<h4 class="western"><strong>6. Unpacking Return Values:</strong></h4>
+<ul>
+	<li><p>You can unpack multiple return values into separate
+	variables.</p></li>
+</ul>
+<pre class="western">
+<code class="western">q, r = divide_and_remainder(10, 3)</code>
+<code class="western">print(f&quot;Quotient: {q}, Remainder: {r}&quot;)</code></pre>
+<ul>
+	<li><p>Here, <code class="western">q</code> and <code class="western">r</code>
+	are assigned the values from the tuple returned by
+	<code class="western">divide_and_remainder</code>.</p></li>
+</ul>
+<h4 class="western"><strong>7. Arbitrary Number of Arguments:</strong></h4>
+<ul>
+	<li><p>Functions can accept an arbitrary number of positional
+	arguments using <code class="western">*args</code>.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def calculate_sum(*args):</code>
+<code class="western">    </code><code class="western">return sum(args)</code>
+
+<code class="western">result = calculate_sum(1, 2, 3, 4, 5)</code>
+<code class="western">print(result)  # Output: 15</code></pre>
+<ul>
+	<li><p>The <code class="western">*args</code> syntax collects all
+	additional positional arguments into a tuple.</p></li>
+</ul>
+<h4 class="western"><strong>8. Keyword Arguments:</strong></h4>
+<ul>
+	<li><p>Functions can accept keyword arguments using <code class="western">**kwargs</code>.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def print_person_info(**kwargs):</code>
+<code class="western">    </code><code class="western">print(f&quot;Name: {kwargs['name']}, Age: {kwargs['age']}&quot;)</code>
+
+<code class="western">print_person_info(name=&quot;Alice&quot;, age=30)</code></pre>
+<ul>
+	<li><p>The <code class="western">**kwargs</code> syntax collects
+	keyword arguments into a dictionary.</p></li>
+</ul>
+<h4 class="western"><strong>9. Conclusion:</strong></h4>
+<p>Mastering the use of parameters and return values is crucial for
+writing versatile and modular functions in Python. Experiment with
+different types of parameters, default values, and return value
+structures to enhance your understanding. In the next lesson, we'll
+explore function scope and variable visibility.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western">5.3 Scope and Lifetime of Variables</h3>
+<p>Understanding the scope and lifetime of variables is crucial for
+writing robust and bug-free Python code. In this lesson, we'll
+explore how variables are scoped in functions, modules, and global
+contexts, and how their lifetime is determined.</p>
+<h4 class="western"><strong>1. Scope:</strong></h4>
+<ul>
+	<li><p>The scope of a variable refers to the region of the code
+	where the variable can be accessed. In Python, variables can have
+	different scopes, including local, enclosing (non-local), and
+	global.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Global Scope</code>
+<code class="western">global_variable = 10</code>
+
+<code class="western">def example_function():</code>
+<code class="western">    </code><code class="western"># Local Scope</code>
+<code class="western">    </code><code class="western">local_variable = 20</code>
+<code class="western">    </code><code class="western">print(global_variable)</code>
+
+<code class="western">example_function()</code>
+<code class="western">print(global_variable)</code></pre>
+<ul>
+	<li><p>In this example, <code class="western">global_variable</code>
+	is in the global scope, while <code class="western">local_variable</code>
+	is in the local scope of the <code class="western">example_function</code>.</p></li>
+</ul>
+<h4 class="western"><strong>2. Local and Global Variables:</strong></h4>
+<ul>
+	<li><p>Variables declared inside a function are local to that
+	function and can't be accessed outside of it.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def my_function():</code>
+<code class="western">    </code><code class="western">local_variable = 30</code>
+<code class="western">    </code><code class="western">print(local_variable)</code>
+
+<code class="western">my_function()</code>
+<code class="western"># print(local_variable)  # Raises NameError: name 'local_variable' is not defined</code></pre>
+<ul>
+	<li><p>Attempting to access <code class="western">local_variable</code>
+	outside the function results in a <code class="western">NameError</code>.</p></li>
+</ul>
+<h4 class="western"><strong>3. Enclosing (Non-local) Scope:</strong></h4>
+<ul>
+	<li><p>Variables declared in an outer function can be accessed by
+	inner functions.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def outer_function():</code>
+<code class="western">    </code><code class="western">outer_variable = 40</code>
+
+<code class="western">    </code><code class="western">def inner_function():</code>
+<code class="western">        </code><code class="western">print(outer_variable)</code>
+
+<code class="western">    </code><code class="western">inner_function()</code>
+
+<code class="western">outer_function()</code></pre>
+<ul>
+	<li><p>Here, <code class="western">inner_function</code> can access
+	<code class="western">outer_variable</code> from the enclosing scope
+	of <code class="western">outer_function</code>.</p></li>
+</ul>
+<h4 class="western"><strong>4. Global Keyword:</strong></h4>
+<ul>
+	<li><p>The <code class="western">global</code> keyword is used to
+	indicate that a variable refers to the global scope, even if it's
+	used inside a function.</p></li>
+</ul>
+<pre class="western">
+<code class="western">global_variable = 50</code>
+
+<code class="western">def modify_global():</code>
+<code class="western">    </code><code class="western">global global_variable</code>
+<code class="western">    </code><code class="western">global_variable = 60</code>
+
+<code class="western">modify_global()</code>
+<code class="western">print(global_variable)  # Output: 60</code></pre>
+<ul>
+	<li><p>Without the <code class="western">global</code> keyword,
+	<code class="western">modify_global</code> would create a new local
+	variable instead of modifying the global one.</p></li>
+</ul>
+<h4 class="western"><strong>5. Lifetime of Variables:</strong></h4>
+<ul>
+	<li><p>The lifetime of a variable is the duration during which the
+	variable exists in the memory. For local variables, it lasts until
+	the function execution completes. For global variables, it lasts
+	until the program terminates.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def variable_lifetime():</code>
+<code class="western">    </code><code class="western">local_var = &quot;I'm local!&quot;</code>
+<code class="western">    </code><code class="western">print(local_var)</code>
+
+<code class="western">variable_lifetime()</code>
+<code class="western"># print(local_var)  # Raises NameError: name 'local_var' is not defined</code></pre>
+<ul>
+	<li><p><code class="western">local_var</code> exists only during the
+	execution of <code class="western">variable_lifetime</code>.</p></li>
+</ul>
+<h4 class="western"><strong>6. Conclusion:</strong></h4>
+<p>Understanding variable scope and lifetime is essential for writing
+clean and maintainable code. Practice working with different scopes,
+avoiding naming conflicts, and using the <code class="western">global</code>
+keyword when necessary. As you become more familiar with scope
+concepts, you'll be better equipped to design efficient and modular
+Python programs.</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western">5.4 Function Best Practices</h3>
+<p>Writing functions that are clear, modular, and efficient is
+crucial for producing high-quality Python code. In this lesson, we'll
+explore best practices for designing functions, making them more
+readable, and promoting maintainability.</p>
+<h4 class="western"><strong>1. Descriptive Function Names:</strong></h4>
+<ul>
+	<li><p>Choose descriptive and meaningful names for your functions
+	that convey their purpose. A well-named function makes the code more
+	readable.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">def calculate_area(radius):</code>
+<code class="western">    </code><code class="western"># Function implementation</code>
+
+<code class="western"># Avoid</code>
+<code class="western">def calc(a):</code>
+<code class="western">    </code><code class="western"># Function implementation</code></pre><h4 class="western">
+<strong>2. Single Responsibility Principle:</strong></h4>
+<ul>
+	<li><p>Follow the Single Responsibility Principle, where each
+	function should have a single, well-defined purpose. If a function
+	is doing too much, consider breaking it into smaller functions.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">def calculate_area(radius):</code>
+<code class="western">    </code><code class="western"># Function implementation</code>
+
+<code class="western">def calculate_circumference(radius):</code>
+<code class="western">    </code><code class="western"># Function implementation</code>
+
+<code class="western"># Avoid</code>
+<code class="western">def calculate_area_and_circumference(radius):</code>
+<code class="western">    </code><code class="western"># Function implementation</code></pre><h4 class="western">
+<strong>3. Use Docstrings:</strong></h4>
+<ul>
+	<li><p>Include docstrings to provide documentation for your
+	functions. Describe the purpose of the function, its parameters, and
+	return values.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def calculate_area(radius):</code>
+<code class="western">    </code><code class="western">&quot;&quot;&quot;</code>
+<code class="western">    </code><code class="western">Calculate the area of a circle.</code>
+
+<code class="western">    </code><code class="western">Parameters:</code>
+<code class="western">    </code><code class="western">- radius (float): The radius of the circle.</code>
+
+<code class="western">    </code><code class="western">Returns:</code>
+<code class="western">    </code><code class="western">float: The area of the circle.</code>
+<code class="western">    </code><code class="western">&quot;&quot;&quot;</code>
+<code class="western">    </code><code class="western"># Function implementation</code></pre><h4 class="western">
+<strong>4. Default Parameter Values:</strong></h4>
+<ul>
+	<li><p>Use default parameter values to make your functions more
+	flexible. Default values should make sense in the context of the
+	function.</p></li>
+</ul>
+<pre class="western">
+<code class="western">def greet(name=&quot;Guest&quot;):</code>
+<code class="western">    </code><code class="western">print(f&quot;Hello, {name}!&quot;)</code>
+
+<code class="western">greet()         # Output: Hello, Guest!</code>
+<code class="western">greet(&quot;Alice&quot;)  # Output: Hello, Alice!</code></pre><h4 class="western">
+<strong>5. Avoid Global Variables:</strong></h4>
+<ul>
+	<li><p>Minimize the use of global variables inside functions. Pass
+	variables as parameters instead to improve function reusability and
+	readability.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">def calculate_total_price(price, quantity):</code>
+<code class="western">    </code><code class="western">return price * quantity</code>
+
+<code class="western"># Avoid</code>
+<code class="western">total_price = 0</code>
+
+<code class="western">def calculate_total_price_bad(price, quantity):</code>
+<code class="western">    </code><code class="western">global total_price</code>
+<code class="western">    </code><code class="western">total_price = price * quantity</code></pre><h4 class="western">
+<strong>6. Avoid Side Effects:</strong></h4>
+<ul>
+	<li><p>A function should ideally have no side effects, meaning it
+	doesn't modify external variables or produce unexpected behavior.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">def square(number):</code>
+<code class="western">    </code><code class="western">return number ** 2</code>
+
+<code class="western"># Avoid</code>
+<code class="western">result = 0</code>
+
+<code class="western">def square_bad(number):</code>
+<code class="western">    </code><code class="western">global result</code>
+<code class="western">    </code><code class="western">result = number ** 2</code></pre><h4 class="western">
+<strong>7. Use Function Arguments Wisely:</strong></h4>
+<ul>
+	<li><p>Be mindful of the number of function parameters. If a
+	function has many parameters, consider using data structures like
+	dictionaries or namedtuples to group related values.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">def create_point(x, y):</code>
+<code class="western">    </code><code class="western"># Function implementation</code>
+
+<code class="western"># Better</code>
+<code class="western">def create_point(point):</code>
+<code class="western">    </code><code class="western"># Function implementation</code></pre><h4 class="western">
+<strong>8. Testability:</strong></h4>
+<ul>
+	<li><p>Write functions in a way that facilitates testing. Functions
+	that are modular and have well-defined inputs and outputs are easier
+	to test.</p></li>
+</ul>
+<h4 class="western"><strong>9. Consistent Return Values:</strong></h4>
+<ul>
+	<li><p>Be consistent with return values. If a function returns a
+	specific type in one scenario, try to return the same type in
+	similar situations.</p></li>
+</ul>
+<h4 class="western"><strong>10. Conclusion:</strong></h4>
+<p>Applying these best practices will help you write functions that
+are clear, maintainable, and easy to understand. Strive for clean and
+modular code, and consider how your functions contribute to the
+overall readability and structure of your Python programs. As you
+gain experience, these practices will become second nature, leading
+to more effective and enjoyable coding.</p>
+
+
+                        
+                    </div> <!-- end of text-container-->
+                    
+                    <div class="btn-backplaynext-container">
+                        <a class="btn-back" href="python-lesson-4.html">&lt;&lt;</a>
+                        <a class="btn-next" href="python-lesson-6.html">&gt;&gt;</a>
+                    </div> <!-- end of btn-backplaynext-container-->
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="python-toc-0.html">Python TOC</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Lesson 5</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+    
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-col first">
+                        <h5>About Digital Nomads</h5>
+                        <p class="p-small">We're passionate about teaching people on how to be better in coding and different emerging technologies.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col second">
+                        <h5>Courses</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="python.html">Python</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="javascript.html">JavaScript <b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="c-sharp.html">C#.Net <b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col third">
+                        <h5>Specializations</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="cloud-development.html">Cloud Development </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="web-development.html">Web Development </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="devops.html">DevOps </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col fourth">
+                        <h5>Social Media</h5>
+                        <p class="p-small">For news & updates follow us</p>
+                        <a href="https://www.facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2024 <a href="https://digital-nomads.github.com">Digital Nomads</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/jquery.countdown.min.js"></script> <!-- The Final Countdown plugin for jQuery -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../js/jquery-scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

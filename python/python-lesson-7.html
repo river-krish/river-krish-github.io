@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Landing page of Python Fundamentals.">
+    <meta name="author" content="Digital Nomads">
+
+    <!-- Website Title -->
+    <title>Python Fundamentals</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+	<link href="../css/styles-python.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Digital Nomads</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.png" alt="Digital Nomads logo"></a> 
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#details">DETAILS <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Courses Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#courses" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="python.html"><span class="item-text">PYTHON</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript.html"><span class="item-text">JAVASCRIPT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="c-sharp.html"><span class="item-text">C#.NET <b style= "color: Red">(Coming Soon)</b></span></a>
+                    </div>
+                </li>
+                <!-- end of courses dropdown menu -->
+                <!-- Specializations Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#specializations" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SPECIALIZATIONS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cloud-development.html"><span class="item-text">CLOUD DEVELOPMENT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="web-development.html"><span class="item-text">WEB DEVELOPMENT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="devops.html"><span class="item-text">DEVOPS <b style= "color: Red">(Coming Soon)</b></span></a>
+                    </div>
+                </li>
+                <!-- end of specializations dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#about">ABOUT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.twitter.com">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-container">
+                        <h1>Python Fundamentals</h1>
+                        <p class="p-large">7. File Handling</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        
+        
+
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="python-toc-0.html">Python TOC</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Lesson 7</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+   
+
+    <!-- Privacy Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h3 class="western">7.1 Reading from Files</h3>
+<p>Reading from files is a common task in Python, allowing you to
+access and process data stored in external files. In this lesson,
+we'll explore the basics of reading from text files and discuss best
+practices for handling file operations.</p>
+<h4 class="western"><strong>1. Opening a File:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">open()</code> function to open
+	a file. Specify the file name and the mode (&quot;r&quot; for
+	reading).</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Opening a file in read mode</code>
+<code class="western">file_path = &quot;example.txt&quot;</code>
+<code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">    </code><code class="western"># File operations go here</code></pre><h4 class="western">
+<strong>2. Reading Entire Contents:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">read()</code> method to read
+	the entire contents of the file as a string.</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">    </code><code class="western">content = file.read()</code>
+<code class="western">    </code><code class="western">print(content)</code></pre><h4 class="western">
+<strong>3. Reading Line by Line:</strong></h4>
+<ul>
+	<li><p>Use a loop to read the file line by line using the <code class="western">readline()</code>
+	method.</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">    </code><code class="western">for line in file:</code>
+<code class="western">        </code><code class="western">print(line.strip())  # Strip removes newline characters</code></pre><h4 class="western">
+<strong>4. Reading All Lines into a List:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">readlines()</code> method to
+	read all lines into a list.</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">    </code><code class="western">lines = file.readlines()</code>
+<code class="western">    </code><code class="western">for line in lines:</code>
+<code class="western">        </code><code class="western">print(line.strip())</code></pre><h4 class="western">
+<strong>5. Best Practices:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">with</code> statement (context
+	manager) when working with files. It ensures that the file is
+	properly closed after usage.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">    </code><code class="western">content = file.read()</code>
+<code class="western">    </code><code class="western"># Perform operations</code>
+
+<code class="western"># Avoid</code>
+<code class="western">file = open(file_path, &quot;r&quot;)</code>
+<code class="western">content = file.read()</code>
+<code class="western"># Perform operations</code>
+<code class="western">file.close()  # Explicitly closing the file</code></pre><h4 class="western">
+<strong>6. Checking File Existence:</strong></h4>
+<ul>
+	<li><p>Before attempting to open a file, check if it exists using
+	the <code class="western">os.path.exists()</code> function.</p></li>
+</ul>
+<pre class="western">
+<code class="western">import os</code>
+
+<code class="western">if os.path.exists(file_path):</code>
+<code class="western">    </code><code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">        </code><code class="western">content = file.read()</code>
+<code class="western">        </code><code class="western"># Perform operations</code>
+<code class="western">else:</code>
+<code class="western">    </code><code class="western">print(f&quot;The file {file_path} does not exist.&quot;)</code></pre><h4 class="western">
+<strong>7. Exception Handling:</strong></h4>
+<ul>
+	<li><p>Wrap file operations in a try-except block to handle
+	potential exceptions, such as file not found or permission issues.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western">with open(file_path, &quot;r&quot;) as file:</code>
+<code class="western">        </code><code class="western">content = file.read()</code>
+<code class="western">        </code><code class="western"># Perform operations</code>
+<code class="western">except FileNotFoundError:</code>
+<code class="western">    </code><code class="western">print(f&quot;The file {file_path} does not exist.&quot;)</code>
+<code class="western">except Exception as e:</code>
+<code class="western">    </code><code class="western">print(f&quot;An error occurred: {e}&quot;)</code></pre><h4 class="western">
+<strong>8. Closing the File Explicitly:</strong></h4>
+<ul>
+	<li><p>While using the <code class="western">with</code> statement
+	is recommended, if you choose to open the file without it, ensure to
+	close it explicitly using the <code class="western">close()</code>
+	method.</p></li>
+</ul>
+<pre class="western">
+<code class="western">file = open(file_path, &quot;r&quot;)</code>
+<code class="western">content = file.read()</code>
+<code class="western"># Perform operations</code>
+<code class="western">file.close()  # Explicitly closing the file</code></pre><h4 class="western">
+<strong>9. Conclusion:</strong></h4>
+<p>Reading from files is a fundamental skill in Python programming.
+By following best practices, such as using the <code class="western">with</code>
+statement, checking file existence, and handling exceptions, you can
+ensure your file operations are robust and error-resistant. Practice
+reading from files with different scenarios to enhance your
+file-handling skills.</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western">7.2 Writing to Files</h3>
+<p>Writing to files is a crucial aspect of handling data in Python,
+allowing you to store information for later use or share it with
+others. In this lesson, we'll explore the basics of writing to text
+files and discuss best practices for file-writing operations.</p>
+<h4 class="western"><strong>1. Opening a File for Writing:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">open()</code> function to open
+	a file in write mode (&quot;w&quot;). If the file does not exist, it
+	will be created. If it already exists, its content will be
+	overwritten.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Opening a file in write mode</code>
+<code class="western">file_path = &quot;output.txt&quot;</code>
+<code class="western">with open(file_path, &quot;w&quot;) as file:</code>
+<code class="western">    </code><code class="western"># File-writing operations go here</code></pre><h4 class="western">
+<strong>2. Writing a Single Line:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">write()</code> method to write
+	a single line to the file. Remember to include newline characters
+	(&quot;\n&quot;) if you want to separate lines.</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;w&quot;) as file:</code>
+<code class="western">    </code><code class="western">file.write(&quot;This is a line written to the file.\n&quot;)</code></pre><h4 class="western">
+<strong>3. Writing Multiple Lines:</strong></h4>
+<ul>
+	<li><p>You can write multiple lines to the file by calling <code class="western">write()</code>
+	multiple times or using a list of strings with <code class="western">writelines()</code>.</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;w&quot;) as file:</code>
+<code class="western">    </code><code class="western">lines = [&quot;Line 1\n&quot;, &quot;Line 2\n&quot;, &quot;Line 3\n&quot;]</code>
+<code class="western">    </code><code class="western">file.writelines(lines)</code></pre><h4 class="western">
+<strong>4. Best Practices:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">with</code> statement (context
+	manager) to ensure that the file is properly closed after writing.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">with open(file_path, &quot;w&quot;) as file:</code>
+<code class="western">    </code><code class="western">file.write(&quot;This is a line written to the file.\n&quot;)</code>
+<code class="western">    </code><code class="western"># Perform operations</code>
+
+<code class="western"># Avoid</code>
+<code class="western">file = open(file_path, &quot;w&quot;)</code>
+<code class="western">file.write(&quot;This is a line written to the file.\n&quot;)</code>
+<code class="western"># Perform operations</code>
+<code class="western">file.close()  # Explicitly closing the file</code></pre><h4 class="western">
+<strong>5. Appending to a File:</strong></h4>
+<ul>
+	<li><p>To append content to an existing file, open it in append mode
+	(&quot;a&quot;).</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;a&quot;) as file:</code>
+<code class="western">    </code><code class="western">file.write(&quot;This line will be appended to the file.\n&quot;)</code></pre><h4 class="western">
+<strong>6. Exception Handling:</strong></h4>
+<ul>
+	<li><p>Wrap file-writing operations in a try-except block to handle
+	potential exceptions, such as permission issues or disk space
+	problems.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western">with open(file_path, &quot;w&quot;) as file:</code>
+<code class="western">        </code><code class="western">file.write(&quot;This is a line written to the file.\n&quot;)</code>
+<code class="western">        </code><code class="western"># Perform operations</code>
+<code class="western">except PermissionError:</code>
+<code class="western">    </code><code class="western">print(&quot;Permission error: Unable to write to the file.&quot;)</code>
+<code class="western">except Exception as e:</code>
+<code class="western">    </code><code class="western">print(f&quot;An error occurred: {e}&quot;)</code></pre><h4 class="western">
+<strong>7. Using Context Managers:</strong></h4>
+<ul>
+	<li><p>Context managers are the preferred way to work with files in
+	Python, ensuring proper resource management.</p></li>
+</ul>
+<pre class="western">
+<code class="western">with open(file_path, &quot;w&quot;) as file:</code>
+<code class="western">    </code><code class="western">file.write(&quot;This is a line written to the file.\n&quot;)</code>
+<code class="western">    </code><code class="western"># Perform operations</code></pre><h4 class="western">
+<strong>8. Conclusion:</strong></h4>
+<p>Writing to files is a fundamental skill in Python programming. By
+adhering to best practices, such as using the <code class="western">with</code>
+statement, handling exceptions, and appending when necessary, you can
+ensure robust and reliable file-writing operations. Practice writing
+to files with different scenarios to enhance your file-handling
+skills.</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western">7.3 Handling Exceptions</h3>
+<p>Handling exceptions is a crucial aspect of writing robust and
+error-resistant Python code. In this lesson, we'll explore the basics
+of exception handling, including try-except blocks, raising
+exceptions, and best practices for effectively managing errors in
+your programs.</p>
+<h4 class="western"><strong>1. Try-Except Blocks:</strong></h4>
+<ul>
+	<li><p>Use a try-except block to catch and handle exceptions that
+	might occur during the execution of your code.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise an exception</code>
+<code class="western">    </code><code class="western">result = 10 / 0</code>
+<code class="western">except ZeroDivisionError:</code>
+<code class="western">    </code><code class="western">print(&quot;Error: Division by zero!&quot;)</code></pre><h4 class="western">
+<strong>2. Multiple Except Blocks:</strong></h4>
+<ul>
+	<li><p>You can have multiple except blocks to handle different types
+	of exceptions.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise an exception</code>
+<code class="western">    </code><code class="western">result = int(&quot;not_an_integer&quot;)</code>
+<code class="western">except ValueError:</code>
+<code class="western">    </code><code class="western">print(&quot;Error: Not a valid integer.&quot;)</code>
+<code class="western">except ZeroDivisionError:</code>
+<code class="western">    </code><code class="western">print(&quot;Error: Division by zero!&quot;)</code></pre><h4 class="western">
+<strong>3. Handling Multiple Exceptions:</strong></h4>
+<ul>
+	<li><p>Use a tuple to catch multiple exceptions in a single except
+	block.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise an exception</code>
+<code class="western">    </code><code class="western">result = int(&quot;not_an_integer&quot;)</code>
+<code class="western">except (ValueError, TypeError):</code>
+<code class="western">    </code><code class="western">print(&quot;Error: Not a valid integer.&quot;)</code></pre><h4 class="western">
+<strong>4. Else Block:</strong></h4>
+<ul>
+	<li><p>The else block contains code that should be executed if no
+	exceptions are raised.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise an exception</code>
+<code class="western">    </code><code class="western">result = 10 / 2</code>
+<code class="western">except ZeroDivisionError:</code>
+<code class="western">    </code><code class="western">print(&quot;Error: Division by zero!&quot;)</code>
+<code class="western">else:</code>
+<code class="western">    </code><code class="western">print(&quot;No error occurred. Result:&quot;, result)</code></pre><h4 class="western">
+<strong>5. Finally Block:</strong></h4>
+<ul>
+	<li><p>The finally block contains code that will be executed no
+	matter what, whether an exception is raised or not.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise an exception</code>
+<code class="western">    </code><code class="western">result = 10 / 2</code>
+<code class="western">except ZeroDivisionError:</code>
+<code class="western">    </code><code class="western">print(&quot;Error: Division by zero!&quot;)</code>
+<code class="western">else:</code>
+<code class="western">    </code><code class="western">print(&quot;No error occurred. Result:&quot;, result)</code>
+<code class="western">finally:</code>
+<code class="western">    </code><code class="western">print(&quot;This code always runs.&quot;)</code></pre><h4 class="western">
+<strong>6. Raising Exceptions:</strong></h4>
+<ul>
+	<li><p>Use the <code class="western">raise</code> statement to
+	manually raise exceptions when certain conditions are met.</p></li>
+</ul>
+<pre class="western">
+<code class="western">try:</code>
+<code class="western">    </code><code class="western">age = -5</code>
+<code class="western">    </code><code class="western">if age &lt; 0:</code>
+<code class="western">        </code><code class="western">raise ValueError(&quot;Age cannot be negative.&quot;)</code>
+<code class="western">except ValueError as ve:</code>
+<code class="western">    </code><code class="western">print(f&quot;Error: {ve}&quot;)</code></pre><h4 class="western">
+<strong>7. Custom Exceptions:</strong></h4>
+<ul>
+	<li><p>You can create your own custom exceptions by subclassing the
+	<code class="western">Exception</code> class.</p></li>
+</ul>
+<pre class="western">
+<code class="western">class CustomError(Exception):</code>
+<code class="western">    </code><code class="western">pass</code>
+
+<code class="western">try:</code>
+<code class="western">    </code><code class="western">raise CustomError(&quot;This is a custom exception.&quot;)</code>
+<code class="western">except CustomError as ce:</code>
+<code class="western">    </code><code class="western">print(f&quot;Custom Error: {ce}&quot;)</code></pre><h4 class="western">
+<strong>8. Best Practices:</strong></h4>
+<ul>
+	<li><p>Be specific in handling exceptions. Catch only the exceptions
+	you expect and handle them appropriately.</p></li>
+	<li><p>Provide informative error messages to aid in debugging.</p></li>
+	<li><p>Avoid using a broad <code class="western">except</code>
+	clause that catches all exceptions unless necessary.</p></li>
+</ul>
+<pre class="western">
+<code class="western"># Good Example</code>
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise a specific exception</code>
+<code class="western">except SpecificError as se:</code>
+<code class="western">    </code><code class="western">print(f&quot;Error: {se}&quot;)</code>
+<code class="western">except AnotherSpecificError as ase:</code>
+<code class="western">    </code><code class="western">print(f&quot;Error: {ase}&quot;)</code>
+
+<code class="western"># Avoid</code>
+<code class="western">try:</code>
+<code class="western">    </code><code class="western"># Code that may raise any exception</code>
+<code class="western">except Exception as e:</code>
+<code class="western">    </code><code class="western">print(f&quot;Error: {e}&quot;)</code></pre><h4 class="western">
+<strong>9. Conclusion:</strong></h4>
+<p>Effective exception handling is vital for writing reliable and
+maintainable Python code. By using try-except blocks, raising
+exceptions judiciously, and following best practices, you can ensure
+that your programs gracefully handle errors and provide meaningful
+feedback. Practice handling exceptions in different scenarios to
+strengthen your error-handling skills.</p>
+
+
+                        
+                    </div> <!-- end of text-container-->
+                    
+                    <div class="btn-backplaynext-container">
+                        <a class="btn-back" href="python-lesson-6.html">&lt;&lt;</a>
+                        <a class="btn-next" href="python-lesson-8.html">&gt;&gt;</a>
+                    </div> <!-- end of btn-backplaynext-container-->
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="python-toc-0.html">Python TOC</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Lesson 7</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+    
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-col first">
+                        <h5>About Digital Nomads</h5>
+                        <p class="p-small">We're passionate about teaching people on how to be better in coding and different emerging technologies.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col second">
+                        <h5>Courses</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="python.html">Python</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="javascript.html">JavaScript <b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="c-sharp.html">C#.Net <b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col third">
+                        <h5>Specializations</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="cloud-development.html">Cloud Development </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="web-development.html">Web Development </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="devops.html">DevOps </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col fourth">
+                        <h5>Social Media</h5>
+                        <p class="p-small">For news & updates follow us</p>
+                        <a href="https://www.facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2024 <a href="https://digital-nomads.github.com">Digital Nomads</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/jquery.countdown.min.js"></script> <!-- The Final Countdown plugin for jQuery -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../js/jquery-scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

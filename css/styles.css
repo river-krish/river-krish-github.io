@@ -1,0 +1,1354 @@
+/*****************************************
+Table Of Contents:
+
+01. General Styles
+02. Navigation
+03. Header
+04. Details
+05. Students
+06. Details Lightbox
+07. Discover
+08. Courses
+09. Specializations
+10. About
+11. Footer
+12. Copyright
+13. Back To Top Button
+14. Media Queries
+******************************************/
+
+/*****************************************
+Colors:
+- Backgrounds - light gray #fbf9f5
+- Backgrounds, buttons - green #1FA171
+- Headings text, navbar links - black #333
+******************************************/
+
+
+/******************************/
+/*     01. General Styles     */
+/******************************/
+body,
+html {
+    width: 100%;
+	height: 100%;
+}
+
+body, p {
+	font: 400 1rem/1.625rem "Montserrat", sans-serif;
+}
+
+.p-large {
+	font: 400 1.125rem/1.75rem "Montserrat", sans-serif;
+}
+
+.p-small {
+	font: 400 0.875rem/1.5rem "Montserrat", sans-serif;
+}
+
+.p-heading {
+	margin-bottom: 3.75rem;
+}
+
+h1 {
+	color: #333;
+	font: 700 2.75rem/3.375rem "Montserrat", sans-serif;
+}
+
+h2 {
+	color: #333;
+	font: 700 2.25rem/2.875rem "Montserrat", sans-serif;
+}
+
+h3 {
+	color: #333;
+	font: 700 1.625rem/2.125rem "Montserrat", sans-serif;
+}
+
+h4 {
+	color: #333;
+	font: 700 1.25rem/1.875rem "Montserrat", sans-serif;
+}
+
+h5 {
+	color: #333;
+	font: 700 1.125rem/1.75rem "Montserrat", sans-serif;
+}
+
+h6 {
+	color: #333;
+	font: 700 1rem/1.625rem "Montserrat", sans-serif;
+}
+
+.testimonial-text {
+	font-style: italic;
+}
+
+.testimonial-author {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.625rem;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.375rem;
+}
+
+.indent {
+	padding-left: 1.25rem;
+}
+
+a {
+	color: #555;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+
+.white {
+	color: #eee;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #1FA171;
+	border-radius: 2rem;
+	background-color: #1FA171;
+	color: #333;
+	font: 600 0.875rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	border: 0.125rem solid #333;
+	background-color: transparent;
+	color: #333;
+	text-decoration: none;
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid #1FA171;
+	border-radius: 2rem;
+	background-color: #1FA171;
+	color: #333;
+	font: 600 0.875rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	border: 0.125rem solid #333;
+	background-color: transparent;
+	color: #333;
+	text-decoration: none;
+}
+
+.btn-outline-reg {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #333;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #333;
+	font: 600 0.875rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+	border: 0.125rem solid #1FA171;
+	background-color: #1FA171;
+	color: #333;
+	text-decoration: none;
+}
+
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid #333;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #333;
+	font: 600 0.875rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+	border: 0.125rem solid #1FA171;
+	background-color: #1FA171;
+	color: #333;
+	text-decoration: none;
+}
+
+.btn-outline-sm {
+	display: inline-block;
+	padding: 1rem 1.625rem 0.875rem 1.625rem;
+	border: 0.125rem solid #333;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #333;
+	font: 600 0.875rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+	border: 0.125rem solid #1FA171;
+	background-color: #1FA171;
+	color: #333;
+	text-decoration: none;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 1.25rem;
+}
+
+.form-group.has-error.has-danger {
+	margin-bottom: 0.625rem;
+}
+
+.form-group.has-error.has-danger .help-block.with-errors ul {
+	margin-top: 0.375rem;
+}
+
+.label-control {
+	position: absolute;
+	top: 0.87rem;
+	left: 1.375rem;
+	color: #555;
+	opacity: 1;
+	font: 400 0.875rem/1.375rem "Montserrat", sans-serif;
+	cursor: text;
+	transition: all 0.2s ease;
+}
+
+/* Fade-move Animation For Details Lightbox - Magnific Popup */
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-out;
+	-webkit-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+}
+
+/* dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+	transition: opacity 0.2s ease-out;
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/* end of fade-move animation for details lightbox - magnific popup */
+
+/* Fade Animation For Image Lightbox - Magnific Popup */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 0.6s;
+	animation: fadeIn 0.6s;
+}
+
+@-webkit-keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.fadeOut {
+	-webkit-animation: fadeOut 0.8s;
+	animation: fadeOut 0.8s;
+}
+/* end of fade animation for details lightbox - magnific popup */
+
+
+/**************************/
+/*     02. Navigation     */
+/**************************/
+.navbar-custom {
+	background-color: #fff;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.04);
+	font: 600 0.875rem/0.875rem "Montserrat", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    width: 9.5625rem;
+	height: 1.875rem;
+}
+
+.navbar-custom .navbar-brand.logo-text {
+	font: italic 600 2rem/1.5rem "Montserrat", sans-serif;
+	color: #1FA171;
+	text-decoration: none;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem;
+	color: #333;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+	color: #1FA171;
+}
+
+/* Dropdown Menu */
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #fff;
+}
+
+.navbar-custom .dropdown-item {
+	color: #333;
+	text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+	background-color: #fff;
+}
+
+.navbar-custom .dropdown-item .item-text {
+	font: 600 0.875rem/0.875rem "Montserrat", sans-serif;
+}
+
+.navbar-custom .dropdown-item:hover .item-text {
+	color: #1FA171;
+}
+
+.navbar-custom .dropdown-divider {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+/* end of dropdown menu */
+
+.navbar-custom .social-icons {
+	display: none;
+}
+
+.navbar-custom .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: #333;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+
+
+/*********************/
+/*    03. Header     */
+/*********************/
+.header {
+	position: relative;
+	padding-top: 8rem;
+	padding-bottom: 40%;
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-background.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.header .countdown {
+	margin-bottom: 0.5rem;
+	color: #fff;
+	text-align: center;
+}
+
+.header .countdown #clock .counter-number {
+	display: inline-block;
+	width: 6.5rem;
+	height: 6.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+	margin-left: 0.5rem;
+	padding-top: 2rem;
+	border: 0.125rem solid #fff;
+	border-radius: 50%;
+	font-weight: 400;
+	font-size: 2.25rem;
+	line-height: 1.25rem;
+	text-align: center;
+}
+
+.header .countdown #clock .counter-number .timer-text {
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.header h1 {
+	margin-bottom: 0.75rem;
+	color: #eee;
+}
+
+.header .p-large {
+	margin-bottom: 1.75rem;
+	color: #ddd;
+}
+
+.header .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.125rem;
+	margin-left: 0.5rem;
+}
+
+.header .btn-solid-lg:hover {
+	border: 0.125rem solid #1FA171;
+	color: #2ADB9A;
+}
+
+.header .btn-outline-lg {
+	border: 0.125rem solid #fff;
+	color: #fff;
+}
+
+.header .btn-outline-lg:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.header .outer-container {
+	position: absolute;
+	right: 0;
+	bottom: -2rem;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.header .slider-container {
+	position: relative;
+}
+
+.header .swiper-container {
+	position: static;
+	width: 80%;
+	border-radius: 0.75rem;
+}
+
+.header .swiper-container img {
+	border-radius: 0.75rem;
+}
+
+.header .swiper-button-prev:focus,
+.header .swiper-button-next:focus {
+	/* even if you can't see it chrome you can see it on mobile device */
+	outline: none;
+}
+
+.header .swiper-button-prev {
+	left: 0.25rem;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+	background-size: 1.125rem 1.75rem;
+}
+
+.header .swiper-button-next {
+	right: 0.25rem;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+	background-size: 1.125rem 1.75rem;
+}
+
+
+/***************************/
+/*     04. Details     */
+/***************************/
+.basic-2 {
+	padding-top: 6.5rem;
+	padding-bottom: 2.75rem;
+	background-color: #1FA171;
+}
+
+.basic-2 h2 {
+	margin-bottom: 3.75rem;
+	text-align: center;
+}
+
+.basic-2 .li-space-lg li {
+	margin-bottom: 1.375rem;
+}
+
+.basic-2 .list-unstyled .bullet {
+	margin-right: 0.625rem;
+	width: 2.125rem;
+	height: 2.125rem;
+	border-radius: 50%;
+	background-color: #fbf9f5;
+	color: #333;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 2rem;
+	text-align: center;
+}
+
+
+/************************/
+/*     05. Students     */
+/************************/
+.basic-3 {
+	padding-top: 2.75rem;
+	padding-bottom: 4rem;
+	background-color: #fbf9f5;
+}
+
+.basic-3 .text-container {
+	margin-bottom: 3.5rem;
+}
+
+.basic-3 h2 {
+	margin-bottom: 1.25rem;
+}
+
+.basic-3 p {
+	margin-bottom: 1.375rem;
+}
+
+.basic-3 img {
+	border-radius: 0.25rem;
+}
+
+
+/********************************/
+/*     06. Details Lightbox     */
+/********************************/
+.lightbox-basic {
+	margin: 2.5rem auto;
+	padding: 2rem 1.5rem 2rem 1.5rem;
+	border-radius: 0.25rem;
+	background: #fbf9f5;
+	text-align: left;
+}
+
+.lightbox-basic .container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.lightbox-basic .image-container {
+	max-width: 33.75rem;
+	margin-right: auto;
+	margin-bottom: 3rem;
+	margin-left: auto;
+}
+
+.lightbox-basic .image-container img {
+	border-radius: 0.25rem;
+}
+
+.lightbox-basic h3 {
+	margin-bottom: 0.5rem;
+}
+
+.lightbox-basic hr {
+	width: 2.5rem;
+	height: 0.125rem;
+	margin-top: 0;
+	margin-bottom: 0.875rem;
+	margin-left: 0;
+	border: 0;
+	background-color: #555;
+	text-align: left;
+}
+
+.lightbox-basic h4 {
+	margin-bottom: 1rem;
+}
+
+.lightbox-basic .list-unstyled .fas {
+	color: #555;
+	font-size: 0.5rem;
+	line-height: 1.5rem;
+}
+
+.lightbox-basic .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.lightbox-basic .btn-outline-reg,
+.lightbox-basic .btn-solid-reg {
+	margin-top: 0.75rem;
+}
+
+/* Signup Button */
+.lightbox-basic .btn-solid-reg.mfp-close {
+	position: relative;
+	width: auto;
+	height: auto;
+	color: #333;
+	opacity: 1;
+}
+
+.lightbox-basic .btn-solid-reg.mfp-close:hover {
+	color: #333;
+}
+/* end of signup Button */
+
+/* Back Button */
+.lightbox-basic a.mfp-close.as-button {
+	position: relative;
+	width: auto;
+	height: auto;
+	margin-left: 0.375rem;
+	color: #333;
+	opacity: 1;
+}
+
+.lightbox-basic a.mfp-close.as-button:hover {
+	color: #333;
+}
+/* end of back button */
+
+.lightbox-basic button.mfp-close.x-button {
+	position: absolute;
+	top: -0.125rem;
+	right: -0.125rem;
+	width: 2.75rem;
+	height: 2.75rem;
+	color: #707984;
+}
+
+
+/********************/
+/*     07. Discover     */
+/********************/
+.basic-5 {
+	background-color: #fbf9f5;
+}
+
+.basic-5 .text-container {
+	padding-top: 6rem;
+	padding-bottom: 6.125rem;
+	border-radius: 0.75rem;
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/date-background.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.basic-5 h2 {
+	width: 90%;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	color: #eee;
+}
+
+.basic-5 p {
+	width: 88%;
+	margin-right: auto;
+	margin-bottom: 1.75rem;
+	margin-left: auto;
+	color: #ddd;
+}
+
+.basic-5 .btn-solid-lg:hover {
+	border: 0.125rem solid #fff;
+	color: #fff;
+}
+
+
+/**********************/
+/*     08. Courses    */
+/**********************/
+#courses {
+	padding-top: 3rem;
+	background-color: #fbf9f5;
+}
+
+#courses h2 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+#courses p {
+	text-align: center;
+}
+
+#courses .card {
+	max-width: 21rem;
+	margin-right: auto;
+	margin-bottom: 4rem;
+	margin-left: auto;
+	padding: 3rem 1.625rem 1.75rem 1.625rem;
+	border: none;
+	background-color: #fff;
+	text-align: center;
+}
+
+#courses .card-image {
+	width: 6rem;
+	height: 6rem;
+	margin-right: auto;
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	border-radius: 50%;
+	background-color: #fbf9f5;
+}
+
+#courses .fas,
+#courses .far {
+	color: #1FA171;
+	font-size: 3rem;
+	line-height: 6rem;
+}
+
+#courses .card-body {
+	padding: 0;
+}
+
+#courses .card-title {
+	margin-bottom: 0.5rem;
+}
+
+
+/******************************/
+/*     09. Specializations    */
+/******************************/
+#specializations {
+	background-color: #fbf9f5;
+}
+
+#specializations h2 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+#specializations p {
+	text-align: center;
+}
+
+#specializations .card {
+	max-width: 21rem;
+	margin-right: auto;
+	margin-bottom: 4rem;
+	margin-left: auto;
+	padding: 3rem 1.625rem 1.75rem 1.625rem;
+	border: none;
+	background-color: #fff;
+	text-align: center;
+}
+
+#specializations .card-image {
+	width: 6rem;
+	height: 6rem;
+	margin-right: auto;
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	border-radius: 50%;
+	background-color: #fbf9f5;
+}
+
+#specializations .fas,
+#specializations .far {
+	color: #1FA171;
+	font-size: 3rem;
+	line-height: 6rem;
+}
+
+#specializations .card-body {
+	padding: 0;
+}
+
+#specializations .card-title {
+	margin-bottom: 0.5rem;
+}
+
+
+/**************************/
+/*     10. About     */
+/**************************/
+.basic-1 {
+	padding-top: 3.75rem;
+	padding-bottom: 3.5rem;
+	background-color: #1FA171;
+}
+
+.basic-1 h2 {
+	margin-bottom: 1.25rem;
+}
+
+.basic-1 img {
+	margin-bottom: 2.5rem;
+	border-radius: 0.25rem;
+}
+
+
+/**********************/
+/*     11. Footer     */
+/**********************/
+.footer {
+	padding-top: 4.75rem;
+	padding-bottom: 2rem;
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-background.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.footer .footer-col {
+	margin-bottom: 2.25rem;
+}
+
+.footer h5 {
+	margin-bottom: 0.5rem;
+}
+
+.footer a { 
+	text-decoration: none;
+}
+
+.footer h5,
+.footer p,
+.footer a {
+	color: #bbb;
+}
+
+.footer .list-unstyled .fas {
+	color: #bbb;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+}
+
+.footer .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.footer .fab {
+	margin-bottom: 0.75rem;
+	margin-right: 1rem;
+	color: #ccc;
+	font-size: 1.25rem;
+	transition: all 0.2s ease;
+}
+
+.footer .fab:hover {
+	color: #1FA171;
+}
+
+
+/*************************/
+/*     12. Copyright     */
+/*************************/
+.copyright {
+	padding-top: 1.5rem;
+	padding-bottom: 0.375rem;
+	background-color: #000;
+	text-align: center;
+}
+
+.copyright .p-small {
+	color: #999;
+	font-size: 0.75rem;
+	line-height: 1.375rem;
+}
+
+.copyright a {
+	color: #999;
+}
+
+
+/**********************************/
+/*     13. Back To Top Button     */
+/**********************************/
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 1.875rem;
+	background: #1FA171 url("../images/up-arrow.png") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background-color: #2ADB9A; 
+}
+
+
+/*****************************/
+/*     15. Media Queries     */
+/*****************************/	
+/* Min-width width 768px */
+@media (min-width: 768px) {
+	
+	/* General Styles */
+	.p-heading {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/* end of general styles */
+
+
+	/* Header */
+	.header {
+		padding-top: 9rem;
+	}
+
+	.header h1 {
+		font-size: 4rem;
+		line-height: 4.875rem;
+		letter-spacing: -0.3px;
+	}
+
+	.header .btn-solid-lg {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	.header .outer-container {
+		bottom: -4rem;
+	}
+
+	.header .swiper-button-prev {
+		left: 1.5rem;
+	}
+	
+	.header .swiper-button-next {
+		right: 1.5rem;
+	}
+	/* end of header */
+
+
+	/* Details */
+	.basic-2 h2 {
+		width: 41rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.basic-2 .list-unstyled .bullet {
+		width: 3.25rem;
+		height: 3.25rem;
+		margin-right: 1rem;
+		font-size: 1.375rem;
+		line-height: 3.25rem;
+	}
+	/* end of Details */
+
+}
+/* end of min-width width 768px */
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	
+	/* Navigation */
+	.navbar-custom {
+		padding: 2.125rem 1.5rem 2.125rem 2rem;
+        background: transparent;
+		box-shadow: none;
+	}
+	
+	.navbar-custom .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		padding: 0.25rem 0.75rem;
+		color: #eee;
+	}
+
+	.navbar-custom.top-nav-collapse {
+        padding: 0.5rem 1.5rem 0.5rem 2rem;
+		background-color: #fff;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.05);
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link {
+		color: #333;
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+		color: #1FA171;
+	}
+
+	.navbar-custom .dropdown-menu {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-top: 0.75rem solid rgba(0, 0, 0, 0);
+		border-radius: 0.25rem;
+	}
+
+	.navbar-custom.top-nav-collapse .dropdown-menu {
+		border-top: 0.5rem solid rgba(0, 0, 0, 0);
+		box-shadow: 0 0.375rem 0.375rem 0 rgba(0, 0, 0, 0.02);
+	}
+
+	.navbar-custom .dropdown-item {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.navbar-custom .dropdown-divider {
+		width: 84%;
+	}
+
+	.navbar-custom .social-icons {
+		display: block;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+	}
+
+	.navbar-custom .fa-stack {
+		width: 2em;
+		margin-left: 0.25rem;
+		font-size: 0.75rem;
+	}
+	
+	.navbar-custom .fa-stack-2x {
+		color: #1FA171;
+		transition: all 0.2s ease;
+	}
+	
+	.navbar-custom .fa-stack-1x {
+		color: #333;
+		transition: all 0.2s ease;
+	}
+
+	.navbar-custom .fa-stack:hover .fa-stack-2x {
+		color: #ee832b;
+	}
+
+	.navbar-custom .fa-stack:hover .fa-stack-1x {
+		color: #fff;
+	}
+	/* end of navigation */
+
+
+	/* General Styles */
+	.p-heading {
+		width: 65%;
+	}
+	/* end of general styles */
+
+
+	/* Header */
+	.header h1,
+	.header .p-large {
+		width: 47rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.header .swiper-button-prev {
+		left: 3rem;
+	}
+	
+	.header .swiper-button-next {
+		right: 3rem;
+	}
+	/* end of header */
+
+
+	/* About */
+	.basic-1 {
+		padding-bottom: 4.5rem;
+	}
+
+	.basic-1 img {
+		margin-bottom: 0;
+	}
+	/* end of About */
+
+
+	/* Details */
+	.basic-2 {
+		padding-top: 8.5rem;
+		padding-bottom: 3.5rem
+	}
+	/* end of Details */
+
+
+	/* Students */
+	.basic-3 {
+		padding-top: 3.5rem;
+		padding-bottom: 4.5rem;
+	}
+
+	.basic-3 .text-container {
+		margin-bottom: 0;
+	}
+	/* end of students */
+
+
+	/* Details Lightbox */
+	.lightbox-basic {
+		max-width: 62.5rem;
+		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+	}
+
+	.lightbox-basic .image-container {
+		max-width: 100%;
+		margin-right: 2rem;
+		margin-bottom: 0;
+		margin-left: 0.5rem;
+	}
+	
+	.lightbox-basic h3 {
+		margin-top: 0.5rem;
+	}
+	/* end of details lightbox */
+
+
+	/* Courses */
+	#courses {
+		padding-top: 3.5rem;
+	}
+
+	#courses .card {
+		display: inline-block;
+		width: 17.75rem;
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	#courses .card:nth-child(3n+2) {
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+	/* end of courses */
+
+	/* Specializations */
+	#specializations .card {
+		display: inline-block;
+		width: 17.75rem;
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	#specializations .card:nth-child(3n+2) {
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+	/* end of specializations */
+
+
+	/* Discover */
+	.basic-5 h2 {
+		width: 70%;
+	}
+	/* end of Discover */
+}
+/* end of min-width width 992px */
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	
+	/* Header */
+	.header {
+		padding-bottom: 31rem;
+	}
+
+	.header .outer-container {
+		width: 69.375rem;
+		bottom: -6rem;
+	}
+
+	.header .swiper-container {
+		width: 100%;
+	}
+
+	.header .swiper-button-prev {
+		left: -2.25rem;
+	}
+	
+	.header .swiper-button-next {
+		right: -2.25rem;
+	}
+	/* end of header */
+	
+
+	/* About */
+	.basic-1 .text-container {
+		margin-top: 3.125rem;
+		margin-left: 3.5rem;
+	}
+	/* end of About */
+
+
+	/* Details */
+	.basic-2 .list-unstyled.first {
+		margin-right: 1.625rem;
+	}
+
+	.basic-2 .list-unstyled.second {
+		margin-left: 1.625rem;
+	}
+	/* end of Details */
+
+
+	/* Students */
+	.basic-3 .text-container {
+		margin-top: 2.5rem;
+		margin-right: 3.5rem;
+	}
+	/* end of students */
+
+
+	/* Courses */
+	#courses .card {
+		width: 21rem;
+	}
+
+	#courses .card:nth-child(3n+2) {
+		margin-right: 2.875rem;
+		margin-left: 2.875rem;
+	}
+	/* end of courses */
+
+	/* Specializations */
+	#specializations .card {
+		width: 21rem;
+	}
+
+	#specializations .card:nth-child(3n+2) {
+		margin-right: 2.875rem;
+		margin-left: 2.875rem;
+	}
+	/* end of specializations */
+
+
+	/* Discover */
+	.basic-5 h2 {
+		width: 50%;
+	}
+
+	.basic-5 p {
+		width: 74%;
+	}
+	/* end of Discover */
+
+
+	/* Footer */
+	.footer .footer-col.first {
+		margin-right: 1.5rem;
+	}
+
+	.footer .footer-col.second {
+		margin-left: 3rem;
+	}
+
+	.footer .footer-col.third {
+		margin-left: 2.75rem;
+	}
+
+	.footer .footer-col.fourth {
+		margin-left: 1.5rem;
+	}
+	/* end of footer */
+}
+/* end of min-width width 1200px */

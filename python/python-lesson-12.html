@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Landing page of Python Fundamentals.">
+    <meta name="author" content="Digital Nomads">
+
+    <!-- Website Title -->
+    <title>Python Fundamentals</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+	<link href="../css/styles-python.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Digital Nomads</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.png" alt="Digital Nomads logo"></a> 
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#details">DETAILS <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Courses Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#courses" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="python.html"><span class="item-text">PYTHON</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript.html"><span class="item-text">JAVASCRIPT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="c-sharp.html"><span class="item-text">C#.NET <b style= "color: Red">(Coming Soon)</b></span></a>
+                    </div>
+                </li>
+                <!-- end of courses dropdown menu -->
+                <!-- Specializations Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#specializations" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SPECIALIZATIONS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cloud-development.html"><span class="item-text">CLOUD DEVELOPMENT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="web-development.html"><span class="item-text">WEB DEVELOPMENT <b style= "color: Red">(Coming Soon)</b></span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="devops.html"><span class="item-text">DEVOPS <b style= "color: Red">(Coming Soon)</b></span></a>
+                    </div>
+                </li>
+                <!-- end of specializations dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#about">ABOUT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.twitter.com">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-container">
+                        <h1>Python Fundamentals</h1>
+                        <p class="p-large">12. Web Development with Flask</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        
+        
+
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="python-toc-0.html">Python TOC</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Lesson 12</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+   
+
+    <!-- Privacy Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h3 class="western">12.1 Introduction to Flask</h3>
+<p>Flask is a lightweight and flexible web framework for Python that
+simplifies the process of building web applications. In this lesson,
+we'll provide an introduction to Flask, covering its key features and
+basic usage.</p>
+<h4 class="western"><strong>1. What is Flask?</strong></h4>
+<ul>
+	<li><p><strong>Definition:</strong></p>
+	<ul>
+		<li><p>Flask is a micro web framework written in Python. It is
+		designed to be simple, easy to use, and scalable. Flask provides
+		the essential tools and features needed to develop web applications
+		without imposing a rigid structure.</p></li>
+	</ul>
+	<li><p><strong>Key Points:</strong></p>
+	<ul>
+		<li><p>Micro Framework: Flask is often referred to as a
+		micro-framework because it focuses on simplicity and only includes
+		the components necessary for building web applications. This allows
+		developers the flexibility to choose additional tools and libraries
+		based on their needs.</p></li>
+		<li><p>Extensible: While Flask provides the basics, it can be
+		easily extended with various Flask extensions and third-party
+		libraries to add functionalities such as authentication, database
+		integration, and more.</p></li>
+		<li><p>Jinja2 Templating: Flask uses the Jinja2 template engine,
+		allowing developers to create dynamic and reusable templates for
+		rendering HTML content.</p></li>
+	</ul>
+</ul>
+<h4 class="western"><strong>2. Installing Flask:</strong></h4>
+<ul>
+	<li><p>Use the following command to install Flask using pip:</p></li>
+</ul>
+<pre class="western">
+<code class="western">pip install Flask</code></pre><h4 class="western">
+<strong>3. Hello World with Flask:</strong></h4>
+<ul>
+	<li><p>Create a simple Flask application with a &quot;Hello, World!&quot;
+	route.</p></li>
+</ul>
+<pre class="western">
+<code class="western">from flask import Flask</code>
+
+<code class="western">app = Flask(__name__)</code>
+
+<code class="western">@app.route('/')</code>
+<code class="western">def hello_world():</code>
+<code class="western">    </code><code class="western">return 'Hello, World!'</code>
+
+<code class="western">if __name__ == '__main__':</code>
+<code class="western">    </code><code class="western">app.run(debug=True)</code></pre>
+<ul>
+	<li><p>Save the code in a file named <code class="western">app.py</code>
+	and run it using:</p></li>
+</ul>
+<pre class="western">
+<code class="western">python app.py</code></pre>
+<ul>
+	<li><p>Open a web browser and navigate to <code class="western">http://127.0.0.1:5000/</code>
+	to see the &quot;Hello, World!&quot; message.</p></li>
+</ul>
+<h4 class="western"><strong>4. Routes and Views:</strong></h4>
+<ul>
+	<li><p>Routes in Flask define the endpoints or URLs that users can
+	visit. Views are functions associated with these routes.</p></li>
+</ul>
+<pre class="western">
+<code class="western">from flask import Flask, render_template</code>
+
+<code class="western">app = Flask(__name__)</code>
+
+<code class="western">@app.route('/')</code>
+<code class="western">def home():</code>
+<code class="western">    </code><code class="western">return 'Home Page'</code>
+
+<code class="western">@app.route('/about')</code>
+<code class="western">def about():</code>
+<code class="western">    </code><code class="western">return 'About Page'</code>
+
+<code class="western">@app.route('/contact')</code>
+<code class="western">def contact():</code>
+<code class="western">    </code><code class="western">return 'Contact Page'</code>
+
+<code class="western">if __name__ == '__main__':</code>
+<code class="western">    </code><code class="western">app.run(debug=True)</code></pre><h4 class="western">
+<strong>5. Templates with Jinja2:</strong></h4>
+<ul>
+	<li><p>Use templates to render HTML dynamically.</p></li>
+</ul>
+<pre class="western">
+<code class="western">from flask import Flask, render_template</code>
+
+<code class="western">app = Flask(__name__)</code>
+
+<code class="western">@app.route('/')</code>
+<code class="western">def home():</code>
+<code class="western">    </code><code class="western">return render_template('home.html', title='Home Page', content='Welcome to the home page.')</code>
+
+<code class="western">if __name__ == '__main__':</code>
+<code class="western">    </code><code class="western">app.run(debug=True)</code></pre>
+<ul>
+	<li><p>Create a <code class="western">templates</code> folder in the
+	same directory as your Flask application and add an <code class="western">home.html</code>
+	file:</p></li>
+</ul>
+<pre class="western">htmlCopy code
+<code class="western">&lt;!DOCTYPE html&gt;</code>
+<code class="western">&lt;html lang=&quot;en&quot;&gt;</code>
+<code class="western">&lt;head&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;title&gt;{{ title }}&lt;/title&gt;</code>
+<code class="western">&lt;/head&gt;</code>
+<code class="western">&lt;body&gt;</code>
+<code class="western">    </code><code class="western">&lt;h1&gt;{{ title }}&lt;/h1&gt;</code>
+<code class="western">    </code><code class="western">&lt;p&gt;{{ content }}&lt;/p&gt;</code>
+<code class="western">&lt;/body&gt;</code>
+<code class="western">&lt;/html&gt;</code></pre><h4 class="western">
+<strong>6. Flask Extensions:</strong></h4>
+<ul>
+	<li><p>Flask extensions provide additional features for your
+	application. For example, the <code class="western">Flask-WTF</code>
+	extension can be used for handling forms.</p></li>
+</ul>
+<pre class="western">
+<code class="western">pip install Flask-WTF</code>
+
+<code class="western">from flask import Flask, render_template</code>
+<code class="western">from flask_wtf import FlaskForm</code>
+<code class="western">from wtforms import StringField, SubmitField</code>
+
+<code class="western">app = Flask(__name__)</code>
+<code class="western">app.config['SECRET_KEY'] = 'secret'</code>
+
+<code class="western">class MyForm(FlaskForm):</code>
+<code class="western">    </code><code class="western">name = StringField('Name')</code>
+<code class="western">    </code><code class="western">submit = SubmitField('Submit')</code>
+
+<code class="western">@app.route('/', methods=['GET', 'POST'])</code>
+<code class="western">def form_example():</code>
+<code class="western">    </code><code class="western">form = MyForm()</code>
+<code class="western">    </code><code class="western">if form.validate_on_submit():</code>
+<code class="western">        </code><code class="western">return f'Hello, {form.name.data}!'</code>
+<code class="western">    </code><code class="western">return render_template('form_example.html', form=form)</code>
+
+<code class="western">if __name__ == '__main__':</code>
+<code class="western">    </code><code class="western">app.run(debug=True)</code></pre>
+<ul>
+	<li><p>Create a <code class="western">templates</code> folder and
+	add a <code class="western">form_example.html</code> file:</p></li>
+</ul>
+<pre class="western">htmlCopy code
+<code class="western">&lt;!DOCTYPE html&gt;</code>
+<code class="western">&lt;html lang=&quot;en&quot;&gt;</code>
+<code class="western">&lt;head&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;title&gt;Form Example&lt;/title&gt;</code>
+<code class="western">&lt;/head&gt;</code>
+<code class="western">&lt;body&gt;</code>
+<code class="western">    </code><code class="western">&lt;h1&gt;Form Example&lt;/h1&gt;</code>
+<code class="western">    </code><code class="western">&lt;form method=&quot;POST&quot; action=&quot;/&quot;&gt;</code>
+<code class="western">        </code><code class="western">{{ form.csrf_token }}</code>
+<code class="western">        </code><code class="western">{{ form.hidden_tag() }}</code>
+<code class="western">        </code><code class="western">{{ form.name.label }} {{ form.name(size=20) }}</code>
+<code class="western">        </code><code class="western">{{ form.submit }}</code>
+<code class="western">    </code><code class="western">&lt;/form&gt;</code>
+<code class="western">&lt;/body&gt;</code>
+<code class="western">&lt;/html&gt;</code></pre><h4 class="western">
+<strong>7. Conclusion:</strong></h4>
+<p>Flask is a versatile and user-friendly web framework that allows
+developers to quickly build web applications. Its simplicity and
+flexibility make it an excellent choice for small to medium-sized
+projects. As you explore Flask, refer to the official documentation
+for in-depth information and best practices.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western">12.2 Creating a Simple Web Application with Flask</h3>
+<p>In this lesson, we'll create a simple web application using Flask.
+We'll cover the basic structure of a Flask application, routing,
+templates, and rendering dynamic content.</p>
+<h4 class="western"><strong>1. Project Structure:</strong></h4>
+<p>Create a project folder and organize it as follows:</p>
+<pre class="western">
+<code class="western">my_flask_app/</code>
+<code class="western">|-- templates/</code>
+<code class="western">|   |-- index.html</code>
+<code class="western">|-- app.py</code></pre><h4 class="western">
+<strong>2. Installing Flask:</strong></h4>
+<p>Make sure Flask is installed. If not, install it using:</p>
+<pre class="western">
+<code class="western">pip install Flask</code></pre><h4 class="western">
+<strong>3. Creating the Flask Application:</strong></h4>
+<p>Create a file named <code class="western">app.py</code> and add
+the following code:</p>
+<pre class="western">
+<code class="western">from flask import Flask, render_template</code>
+
+<code class="western">app = Flask(__name__)</code>
+
+<code class="western">@app.route('/')</code>
+<code class="western">def home():</code>
+<code class="western">    </code><code class="western">return render_template('index.html', title='Home', content='Welcome to my Flask App!')</code>
+
+<code class="western">if __name__ == '__main__':</code>
+<code class="western">    </code><code class="western">app.run(debug=True)</code></pre><h4 class="western">
+<strong>4. Creating the HTML Template:</strong></h4>
+<p>Inside the <code class="western">templates</code> folder, create a
+file named <code class="western">index.html</code> with the following
+content:</p>
+<pre class="western">htmlCopy code
+<code class="western">&lt;!DOCTYPE html&gt;</code>
+<code class="western">&lt;html lang=&quot;en&quot;&gt;</code>
+<code class="western">&lt;head&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;title&gt;{{ title }}&lt;/title&gt;</code>
+<code class="western">&lt;/head&gt;</code>
+<code class="western">&lt;body&gt;</code>
+<code class="western">    </code><code class="western">&lt;h1&gt;{{ title }}&lt;/h1&gt;</code>
+<code class="western">    </code><code class="western">&lt;p&gt;{{ content }}&lt;/p&gt;</code>
+<code class="western">&lt;/body&gt;</code>
+<code class="western">&lt;/html&gt;</code></pre><h4 class="western">
+<strong>5. Running the Flask App:</strong></h4>
+<p>In the terminal, navigate to the project folder (<code class="western">my_flask_app</code>)
+and run the Flask app:</p>
+<pre class="western">
+<code class="western">python app.py</code></pre><p>
+Visit <code class="western">http://127.0.0.1:5000/</code> in your web
+browser to see the home page of your Flask app.</p>
+<h4 class="western"><strong>6. Adding Additional Routes:</strong></h4>
+<p>Expand the <code class="western">app.py</code> file to include
+more routes:</p>
+<pre class="western">
+<code class="western">from flask import Flask, render_template</code>
+
+<code class="western">app = Flask(__name__)</code>
+
+<code class="western">@app.route('/')</code>
+<code class="western">def home():</code>
+<code class="western">    </code><code class="western">return render_template('index.html', title='Home', content='Welcome to my Flask App!')</code>
+
+<code class="western">@app.route('/about')</code>
+<code class="western">def about():</code>
+<code class="western">    </code><code class="western">return render_template('index.html', title='About', content='Learn more about my Flask App.')</code>
+
+<code class="western">@app.route('/contact')</code>
+<code class="western">def contact():</code>
+<code class="western">    </code><code class="western">return render_template('index.html', title='Contact', content='Contact us for more information.')</code>
+
+<code class="western">if __name__ == '__main__':</code>
+<code class="western">    </code><code class="western">app.run(debug=True)</code></pre><h4 class="western">
+<strong>7. Enhancing Templates:</strong></h4>
+<p>Update the <code class="western">index.html</code> template to
+include navigation links:</p>
+<pre class="western">htmlCopy code
+<code class="western">&lt;!DOCTYPE html&gt;</code>
+<code class="western">&lt;html lang=&quot;en&quot;&gt;</code>
+<code class="western">&lt;head&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+<code class="western">    </code><code class="western">&lt;title&gt;{{ title }}&lt;/title&gt;</code>
+<code class="western">&lt;/head&gt;</code>
+<code class="western">&lt;body&gt;</code>
+<code class="western">    </code><code class="western">&lt;nav&gt;</code>
+<code class="western">        </code><code class="western">&lt;ul&gt;</code>
+<code class="western">            </code><code class="western">&lt;li&gt;&lt;a href=&quot;{{ url_for('home') }}&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+<code class="western">            </code><code class="western">&lt;li&gt;&lt;a href=&quot;{{ url_for('about') }}&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+<code class="western">            </code><code class="western">&lt;li&gt;&lt;a href=&quot;{{ url_for('contact') }}&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+<code class="western">        </code><code class="western">&lt;/ul&gt;</code>
+<code class="western">    </code><code class="western">&lt;/nav&gt;</code>
+<code class="western">    </code><code class="western">&lt;h1&gt;{{ title }}&lt;/h1&gt;</code>
+<code class="western">    </code><code class="western">&lt;p&gt;{{ content }}&lt;/p&gt;</code>
+<code class="western">&lt;/body&gt;</code>
+<code class="western">&lt;/html&gt;</code></pre><h4 class="western">
+<strong>8. Conclusion:</strong></h4>
+<p>Congratulations! You've created a simple web application using
+Flask. This basic structure can be expanded upon to build more
+complex applications. Explore Flask's documentation for additional
+features, such as handling forms, working with databases, and
+creating dynamic routes. As you become more familiar with Flask,
+you'll have the flexibility to develop web applications tailored to
+your specific needs.</p>
+                        
+                    </div> <!-- end of text-container-->
+                    
+                    <div class="btn-backplaynext-container">
+                        <a class="btn-back" href="python-lesson-11.html">&lt;&lt;</a>
+                        <a class="btn-next" href="python-lesson-13.html">&gt;&gt;</a>
+                    </div> <!-- end of btn-backplaynext-container-->
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../index.html">Home</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="python-toc-0.html">Python TOC</a>
+                        <i class="fa fa-angle-double-right"></i>
+                        <span>Lesson 12</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+    
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-col first">
+                        <h5>About Digital Nomads</h5>
+                        <p class="p-small">We're passionate about teaching people on how to be better in coding and different emerging technologies.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col second">
+                        <h5>Courses</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="python.html">Python</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="javascript.html">JavaScript <b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="c-sharp.html">C#.Net <b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col third">
+                        <h5>Specializations</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="cloud-development.html">Cloud Development </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="web-development.html">Web Development </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="devops.html">DevOps </br><b style= "color: Red">(Coming Soon)</b></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col fourth">
+                        <h5>Social Media</h5>
+                        <p class="p-small">For news & updates follow us</p>
+                        <a href="https://www.facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2024 <a href="https://digital-nomads.github.com">Digital Nomads</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/jquery.countdown.min.js"></script> <!-- The Final Countdown plugin for jQuery -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../js/jquery-scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
